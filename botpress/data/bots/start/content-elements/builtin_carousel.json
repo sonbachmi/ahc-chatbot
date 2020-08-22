@@ -1,0 +1,24 @@
+[
+  {
+    "id": "builtin_carousel-G3ysZQ",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Where to Buy",
+          "actions": [
+            {
+              "action": "Say something",
+              "title": "Olala Shopee"
+            }
+          ],
+          "image": "/api/v1/bots/start/media/cej3piwuwozd820iprfp-25d6bc5d-8931-43f0-8ba2-87c2ed798eabCampaign20180228200613.jpg",
+          "subtitle": "Thank you. Find your product at:"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-22T12:10:54.922Z",
+    "modifiedOn": "2020-08-22T12:29:12.089Z"
+  }
+]

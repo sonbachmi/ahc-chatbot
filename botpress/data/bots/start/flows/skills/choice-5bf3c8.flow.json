@@ -1,0 +1,104 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "ommohihacr",
+    "contentId": "builtin_single-choice-vCRQIR",
+    "invalidContentId": "",
+    "keywords": {
+      "product": [
+        "product",
+        "Product information: Price / Where to buy "
+      ],
+      "promotion": [
+        "promotion",
+        "Promotion"
+      ],
+      "consult": [
+        "consult",
+        "Consultant: Which products for each skin concern? "
+      ],
+      "track_order": [
+        "track_order",
+        "Order tracking"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-vCRQIR {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "885572"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\",\"Product information: Price / Where to buy \"],\"promotion\":[\"promotion\",\"Promotion\"],\"consult\":[\"consult\",\"Consultant: Which products for each skin concern? \"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-ommohihacr'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "943813"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"ommohihacr\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-ommohihacr']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "126221"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "576087"
+    }
+  ]
+}

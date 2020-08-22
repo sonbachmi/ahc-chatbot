@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gOJT4dPO29JM69QaH4Jil3JFXI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/botpress/data/global/config" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\ahc-chatbot\botpress\data\global\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\ahc-chatbot\botpress\data\assets\modules" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.bp">
+    <configuration name="bp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="bp" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="ngrok" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ngrok" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.bp" />
+        <item itemvalue="npm.ngrok" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="" />
+      <created>1597979710579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597979710579</updated>
+      <workItem from="1597979711710" duration="1179000" />
+      <workItem from="1597983030626" duration="1905000" />
+      <workItem from="1598081997113" duration="3526000" />
+      <workItem from="1598085790367" duration="1422000" />
+      <workItem from="1598087598917" duration="8284000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/botpress/modules/.cache/module__a19e3d810adf0b5969947dab7a8480c0138f6298f251e1c1fb898b4fa5b36115/node_production_modules/selection-is-backward/index.js" />
+        <option value="$PROJECT_DIR$/botpress/modules/.cache/module__a19e3d810adf0b5969947dab7a8480c0138f6298f251e1c1fb898b4fa5b36115/node_production_modules/selection-is-backward/index.d.ts" />
+        <option value="$PROJECT_DIR$/botpress/modules/.cache/module__46b81edca4790f17fd6bdfa7b9038fdc017acf35eedb8ad27d6e0ce6c6616b16/node_production_modules/aws-sdk/scripts/services-table-generator.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598092110960">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1598092110960" />
+    <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1597985902708">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1597985902708" />
+    <state width="1419" height="242" key="GridCell.Tab.0.bottom" timestamp="1598100384748">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1419" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
+    <state width="1419" height="242" key="GridCell.Tab.0.center" timestamp="1598100384748">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1419" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
+    <state width="1419" height="242" key="GridCell.Tab.0.left" timestamp="1598100384748">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1419" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
+    <state width="1419" height="242" key="GridCell.Tab.0.right" timestamp="1598100384748">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1419" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1598088373483">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1598088373483" />
+  </component>
+</project>

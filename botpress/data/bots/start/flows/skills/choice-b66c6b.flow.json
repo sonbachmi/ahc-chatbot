@@ -1,0 +1,100 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "w9memgrb7r",
+    "contentId": "builtin_single-choice-boA6Pj",
+    "invalidContentId": "",
+    "keywords": {
+      "1": [
+        "1",
+        "Red 365 + Minisize Aqualuronic at Olala"
+      ],
+      "2": [
+        "2",
+        "Red Serum full size + Red cream minisize free at Beauty Box"
+      ],
+      "3": [
+        "3",
+        "FREESHIP voucher on Shopee Mall"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-boA6Pj {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "322861"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"w9memgrb7r\",\"contentId\":\"builtin_single-choice-boA6Pj\",\"invalidContentId\":\"\",\"keywords\":{\"1\":[\"1\",\"Red 365 + Minisize Aqualuronic at Olala\"],\"2\":[\"2\",\"Red Serum full size + Red cream minisize free at Beauty Box\"],\"3\":[\"3\",\"FREESHIP voucher on Shopee Mall\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-w9memgrb7r'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "737716"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"w9memgrb7r\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-w9memgrb7r']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "844096"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "995330"
+    }
+  ]
+}

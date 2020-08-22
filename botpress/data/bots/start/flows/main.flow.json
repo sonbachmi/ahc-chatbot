@@ -1,0 +1,166 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main_menu"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "3ebedb4c05",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "product_menu",
+      "flow": "skills/choice-3e1eac.flow.json",
+      "next": [
+        {
+          "caption": "User picked [red365]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"red365\"",
+          "node": "product_details_menu"
+        },
+        {
+          "caption": "User picked [masks]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"masks\"",
+          "node": "product_details_menu"
+        },
+        {
+          "caption": "User picked [minimal...]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"minimal10\"",
+          "node": "product_details_menu"
+        },
+        {
+          "caption": "User picked [aesthe-...]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"aesthe-youth\"",
+          "node": "product_details_menu"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-5bf3c8",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "main_menu",
+      "flow": "skills/choice-5bf3c8.flow.json",
+      "next": [
+        {
+          "caption": "User picked [product]",
+          "condition": "temp['skill-choice-ret-ommohihacr'] == \"product\"",
+          "node": "product_menu"
+        },
+        {
+          "caption": "User picked [promoti...]",
+          "condition": "temp['skill-choice-ret-ommohihacr'] == \"promotion\"",
+          "node": "choice-b66c6b"
+        },
+        {
+          "caption": "User picked [consult]",
+          "condition": "temp['skill-choice-ret-ommohihacr'] == \"consult\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [track_o...]",
+          "condition": "temp['skill-choice-ret-ommohihacr'] == \"track_order\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-d524cb",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "product_details_menu",
+      "flow": "skills/choice-d524cb.flow.json",
+      "next": [
+        {
+          "caption": "User picked [price]",
+          "condition": "temp['skill-choice-ret-zd1tq75nog'] == \"price\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [use]",
+          "condition": "temp['skill-choice-ret-zd1tq75nog'] == \"use\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [where_b...]",
+          "condition": "temp['skill-choice-ret-zd1tq75nog'] == \"where_buy\"",
+          "node": "where_buy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "5fefb431d4",
+      "name": "where_buy",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_carousel-G3ysZQ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-b66c6b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-b66c6b",
+      "flow": "skills/choice-b66c6b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [1]",
+          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"1\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [2]",
+          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"2\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [3]",
+          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"3\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

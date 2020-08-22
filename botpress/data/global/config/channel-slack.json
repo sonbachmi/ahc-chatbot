@@ -1,0 +1,9 @@
+{
+  "$schema": "../../assets/modules/channel-slack/config.schema.json",
+  "enabled": true,
+  "botToken": "xoxb-1113432978439-1340628397600-ShhYhadnu0tItct3hrOjmR5F",
+  "signingSecret": "8819413baebc92d058c51ff7a968fec2",
+  "fetchUserInfo": true,
+  "useRTM": false,
+  "chatUserAuthDuration": "24h"
+}

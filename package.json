@@ -1,0 +1,11 @@
+{
+  "name": "ahc-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "bp": "cd botpress && bp",
+    "ngrok": "ngrok http 3000"
+  }
+
+}
