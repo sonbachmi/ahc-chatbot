@@ -26,6 +26,10 @@
       "flow": "skills/choice-3e1eac.flow.json",
       "next": [
         {
+          "condition": "true",
+          "node": "product_buy_now"
+        },
+        {
           "caption": "User picked [red365]",
           "condition": "temp['skill-choice-ret-44d468dfqm'] == \"red365\"",
           "node": "product_details_menu"
@@ -64,12 +68,12 @@
         {
           "caption": "User picked [product]",
           "condition": "temp['skill-choice-ret-ommohihacr'] == \"product\"",
-          "node": "product_menu"
+          "node": "product"
         },
         {
           "caption": "User picked [promoti...]",
           "condition": "temp['skill-choice-ret-ommohihacr'] == \"promotion\"",
-          "node": "choice-b66c6b"
+          "node": ""
         },
         {
           "caption": "User picked [consult]",
@@ -110,7 +114,7 @@
         {
           "caption": "User picked [where_b...]",
           "condition": "temp['skill-choice-ret-zd1tq75nog'] == \"where_buy\"",
-          "node": "where_buy"
+          "node": ""
         },
         {
           "caption": "On failure",
@@ -122,20 +126,10 @@
       "onReceive": null
     },
     {
-      "id": "5fefb431d4",
-      "name": "where_buy",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_carousel-G3ysZQ"
-      ],
-      "onReceive": null,
-      "type": "standard"
-    },
-    {
       "id": "skill-b66c6b",
       "type": "skill-call",
       "skill": "choice",
-      "name": "choice-b66c6b",
+      "name": "promotion_menu",
       "flow": "skills/choice-b66c6b.flow.json",
       "next": [
         {
@@ -161,6 +155,78 @@
       ],
       "onEnter": null,
       "onReceive": null
+    },
+    {
+      "id": "bf0e856b83",
+      "name": "product",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_single-choice-1JiMSg"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8e89582864",
+      "name": "buy_now_menu",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-v3A_RV"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-6cc442",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "back_action",
+      "flow": "skills/choice-6cc442.flow.json",
+      "next": [
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret-uuxpcdcxsh'] == \"back\"",
+          "node": "#"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-b729a0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "buy_now_action",
+      "flow": "skills/choice-b729a0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [buy_now]",
+          "condition": "temp['skill-choice-ret-qq2dnu9dt0'] == \"buy_now\"",
+          "node": "buy_now_menu"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "88865f0203",
+      "name": "product_buy_now",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_single-choice-dF4cqH"
+      ],
+      "onReceive": null,
+      "type": "standard"
     }
   ]
 }

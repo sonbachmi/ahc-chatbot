@@ -1,0 +1,25 @@
+{
+  "id": "9e5vl826nz_buy_now",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "buy"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Yes",
+        "#!builtin_card-hqxx9D"
+      ]
+    },
+    "questions": {
+      "en": [
+        "Buy Now",
+        "I want to buy now",
+        "buy now"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

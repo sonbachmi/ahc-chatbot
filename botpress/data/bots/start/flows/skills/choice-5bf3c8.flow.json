@@ -10,8 +10,7 @@
     "invalidContentId": "",
     "keywords": {
       "product": [
-        "product",
-        "Product information: Price / Where to buy "
+        "product"
       ],
       "promotion": [
         "promotion",
@@ -19,7 +18,8 @@
       ],
       "consult": [
         "consult",
-        "Consultant: Which products for each skin concern? "
+        "consultant",
+        "skin care"
       ],
       "track_order": [
         "track_order",
@@ -43,12 +43,12 @@
           "node": "parse"
         }
       ],
-      "id": "885572"
+      "id": "566584"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\",\"Product information: Price / Where to buy \"],\"promotion\":[\"promotion\",\"Promotion\"],\"consult\":[\"consult\",\"Consultant: Which products for each skin concern? \"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\"],\"promotion\":[\"promotion\",\"Promotion\"],\"consult\":[\"consult\",\"consultant\",\"skin care\"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
       ],
       "next": [
         {
@@ -70,7 +70,7 @@
         }
       ],
       "onEnter": [],
-      "id": "943813"
+      "id": "758477"
     },
     {
       "name": "invalid",
@@ -87,7 +87,7 @@
           "node": "sorry"
         }
       ],
-      "id": "126221"
+      "id": "884184"
     },
     {
       "name": "sorry",
@@ -98,7 +98,7 @@
           "node": "parse"
         }
       ],
-      "id": "576087"
+      "id": "206134"
     }
   ]
 }

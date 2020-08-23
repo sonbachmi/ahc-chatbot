@@ -1,24 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="" />
+    <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_card.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.flow.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.ui.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.flow.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.ui.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/global-hook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/__qna__9e5vl826nz_buy_now.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy_now.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/854459f62c540f3a069c12e3f6a6b874.en.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/fc897bcecae7e19b576b68a6cd83b22c.en.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/qna/9e5vl826nz_buy_now.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/modules/custom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.flow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.ui.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/models/3c78bc5d16d3bac2a52d1fba135bb0aa.en.model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/workspaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/workspaces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gOJT4dPO29JM69QaH4Jil3JFXI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/botpress/data/global/config" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -26,6 +64,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,8 +114,26 @@
       <workItem from="1597983030626" duration="1905000" />
       <workItem from="1598081997113" duration="3526000" />
       <workItem from="1598085790367" duration="1422000" />
-      <workItem from="1598087598917" duration="8284000" />
+      <workItem from="1598087598917" duration="8490000" />
+      <workItem from="1598162701156" duration="20000" />
+      <workItem from="1598162756199" duration="1308000" />
+      <workItem from="1598164157296" duration="6420000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1598101273720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598101273721</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1598101304869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598101304869</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,34 +146,47 @@
       </list>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598092110960">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1598092110960" />
+    <state x="243" y="46" key="CommitChangelistDialog2" timestamp="1598101299433">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="243" y="46" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1598101299433" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1597985902708">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1597985902708" />
-    <state width="1419" height="242" key="GridCell.Tab.0.bottom" timestamp="1598100384748">
+    <state width="1419" height="242" key="GridCell.Tab.0.bottom" timestamp="1598173810847">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
-    <state width="1419" height="242" key="GridCell.Tab.0.center" timestamp="1598100384748">
+    <state width="1419" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598173810847" />
+    <state width="1419" height="242" key="GridCell.Tab.0.center" timestamp="1598173810847">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
-    <state width="1419" height="242" key="GridCell.Tab.0.left" timestamp="1598100384748">
+    <state width="1419" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598173810847" />
+    <state width="1419" height="242" key="GridCell.Tab.0.left" timestamp="1598173810844">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
-    <state width="1419" height="242" key="GridCell.Tab.0.right" timestamp="1598100384748">
+    <state width="1419" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598173810844" />
+    <state width="1419" height="242" key="GridCell.Tab.0.right" timestamp="1598173810847">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598100384748" />
+    <state width="1419" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598173810847" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1598088373483">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1598088373483" />
+    <state x="93" y="93" width="1255" height="735" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598163401935">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="93" y="93" width="1255" height="735" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.920@0.0.1440.920" timestamp="1598163401935" />
   </component>
 </project>

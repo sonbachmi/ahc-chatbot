@@ -1,0 +1,18 @@
+[
+  {
+    "id": "builtin_card-hqxx9D",
+    "formData": {
+      "title$en": "Buy Now",
+      "actions$en": [
+        {
+          "action": "Postback",
+          "title": "Buy Now",
+          "payload": "buy"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-23T08:08:55.052Z",
+    "modifiedOn": "2020-08-23T08:23:35.845Z"
+  }
+]

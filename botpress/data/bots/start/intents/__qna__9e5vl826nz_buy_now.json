@@ -1,0 +1,14 @@
+{
+  "name": "__qna__9e5vl826nz_buy_now",
+  "contexts": [
+    "buy"
+  ],
+  "utterances": {
+    "en": [
+      "Buy Now",
+      "I want to buy now",
+      "buy now"
+    ]
+  },
+  "slots": []
+}

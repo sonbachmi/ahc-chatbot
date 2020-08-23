@@ -8,7 +8,7 @@
     "cors": {
       "enabled": true
     },
-    "externalUrl": "http://5da41b4cb7f4.ngrok.io",
+    "externalUrl": "http://895731b2a1ba.ngrok.io",
     "session": {
       "enabled": false,
       "maxAge": "1h"
@@ -128,6 +128,10 @@
     },
     {
       "location": "MODULES_ROOT/uipath",
+      "enabled": false
+    },
+    {
+      "location": "MODULES_ROOT/custom",
       "enabled": false
     }
   ],

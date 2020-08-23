@@ -1,0 +1,25 @@
+{
+  "name": "buy",
+  "utterances": {
+    "en": [
+      "buy",
+      "buy now",
+      "where to buy",
+      "want to buy",
+      "shop"
+    ]
+  },
+  "slots": [
+    {
+      "id": "subxPdZn1BHqAGeD-tt4X",
+      "name": "product",
+      "entities": [
+        "any"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}
