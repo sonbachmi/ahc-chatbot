@@ -6,6 +6,10 @@
       {
         "condition": "temp.productDetails",
         "node": "product_details_menu"
+      },
+      {
+        "condition": "temp.gotoShop",
+        "node": "promotion_menu"
       }
     ]
   },
@@ -115,7 +119,7 @@
         {
           "caption": "User picked [where_b...]",
           "condition": "temp['skill-choice-ret-zd1tq75nog'] == \"where_buy\"",
-          "node": ""
+          "node": "shop_menu"
         },
         {
           "caption": "On failure",
@@ -164,7 +168,9 @@
       "onEnter": [
         "say #!builtin_single-choice-1JiMSg"
       ],
-      "onReceive": null,
+      "onReceive": [
+        "setProduct {}"
+      ],
       "type": "standard"
     },
     {
@@ -191,9 +197,7 @@
       "id": "234273c52d",
       "name": "promotion",
       "next": [],
-      "onEnter": [
-        "say #!builtin_action-button-NY8IS7"
-      ],
+      "onEnter": [],
       "onReceive": null,
       "type": "standard"
     },
@@ -204,6 +208,57 @@
       "onEnter": [],
       "onReceive": null,
       "type": "standard"
+    },
+    {
+      "id": "f7cc30f2b1",
+      "name": "where_buy",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_single-choice-AMyQyG"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-2ba4b2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "shop_menu",
+      "flow": "skills/choice-2ba4b2.flow.json",
+      "next": [
+        {
+          "caption": "User picked [shop_ol...]",
+          "condition": "temp['skill-choice-ret-03bodpsog7'] == \"shop_olala\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [shop_sh...]",
+          "condition": "temp['skill-choice-ret-03bodpsog7'] == \"shop_shopee\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [shop_la...]",
+          "condition": "temp['skill-choice-ret-03bodpsog7'] == \"shop_lazada\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [shop_be...]",
+          "condition": "temp['skill-choice-ret-03bodpsog7'] == \"shop_beautybox\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [shop_fa...]",
+          "condition": "temp['skill-choice-ret-03bodpsog7'] == \"shop_facebook\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
     }
   ]
 }

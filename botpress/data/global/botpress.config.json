@@ -96,7 +96,7 @@
     },
     {
       "location": "MODULES_ROOT/hitl",
-      "enabled": false
+      "enabled": true
     },
     {
       "location": "MODULES_ROOT/misunderstood",

@@ -1,0 +1,1 @@
+temp.productNow = 'test';

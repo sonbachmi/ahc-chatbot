@@ -1,0 +1,108 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "03bodpsog7",
+    "contentId": "builtin_single-choice-AMyQyG",
+    "invalidContentId": "",
+    "keywords": {
+      "shop_olala": [
+        "shop_olala",
+        "Olala Home"
+      ],
+      "shop_shopee": [
+        "shop_shopee",
+        "Shopee"
+      ],
+      "shop_lazada": [
+        "shop_lazada",
+        "Lazada"
+      ],
+      "shop_beautybox": [
+        "shop_beautybox",
+        "Beauty Box Online"
+      ],
+      "shop_facebook": [
+        "shop_facebook",
+        "Facebook Shop"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-AMyQyG {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "759606"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"03bodpsog7\",\"contentId\":\"builtin_single-choice-AMyQyG\",\"invalidContentId\":\"\",\"keywords\":{\"shop_olala\":[\"shop_olala\",\"Olala Home\"],\"shop_shopee\":[\"shop_shopee\",\"Shopee\"],\"shop_lazada\":[\"shop_lazada\",\"Lazada\"],\"shop_beautybox\":[\"shop_beautybox\",\"Beauty Box Online\"],\"shop_facebook\":[\"shop_facebook\",\"Facebook Shop\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-03bodpsog7'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "497799"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"03bodpsog7\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-03bodpsog7']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "250801"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "979629"
+    }
+  ]
+}

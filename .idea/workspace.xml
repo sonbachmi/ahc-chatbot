@@ -2,28 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_action-button.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/product-hooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/config.schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/web/full.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/web/lite.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-2ba4b2.flow.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-2ba4b2.ui.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/shop-hooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/8742779876c2846d0559b08b78c5bce1.en.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/global/actions/setProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/global/config/hitl.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/analytics/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/analytics/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/basic-skills/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/basic-skills/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/basic-skills/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/basic-skills/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-messenger/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-messenger/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-slack/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-slack/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/examples/custom-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/examples/custom-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/examples/embedded-webchat.html" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/examples/embedded-webchat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/inject.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/inject.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/inject.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/inject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/object_assign.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/object_assign.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/slick/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/slick/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/web/lite.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/channel-web/web/lite.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/editor.worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/editor.worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/json.worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/json.worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/ts.worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/code-editor/web/ts.worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/examples/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/examples/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/extensions/web/lite.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/extensions/web/lite.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/nlu/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/nlu/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/nlu/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/nlu/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/qna/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/qna/config.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/qna/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/qna/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/testing/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/testing/web/full.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/testing/web/lite.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/testing/web/lite.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/precache-manifest.56f0539cc0e1dff04380218439770f24.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/precache-manifest.56f0539cc0e1dff04380218439770f24.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/css/2.3cb00eae.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/css/2.3cb00eae.chunk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/css/main.5019fc32.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/css/main.5019fc32.chunk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/ar.516d1901.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/ar.516d1901.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/de.3e726c2b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/de.3e726c2b.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/en.4f1b7af5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/en.4f1b7af5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/es.cc1b41b0.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/es.cc1b41b0.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/fr.b1156355.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/fr.b1156355.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/he.f62b32f0.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/he.f62b32f0.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/hi.e4ab7bd0.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/hi.e4ab7bd0.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/it.8d15de04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/it.8d15de04.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/ja.8608025c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/ja.8608025c.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/ko.6d3d963f.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/ko.6d3d963f.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/missing.068a3f6b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/missing.068a3f6b.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/nl.c5faaf5a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/nl.c5faaf5a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/pl.dfb064d1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/pl.dfb064d1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/pt.284babb6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/pt.284babb6.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/zh.02c229de.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-admin/public/static/media/zh.02c229de.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/font-lato.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/font-lato.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/font-roboto.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/font-roboto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/material-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/external/material-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/ar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/ar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/de.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/de.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/en.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/en.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/es.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/es.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/fr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/fr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/he.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/he.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/hi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/hi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/it.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/it.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/ja.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/ja.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/ko.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/ko.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/missing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/missing.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/nl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/nl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/pl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/pl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/pt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/pt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/zh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/fonts/zh.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/empty-state.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/empty-state.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/ar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/ar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/de.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/de.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/en.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/en.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/es.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/es.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/fr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/fr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/he.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/he.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/hi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/hi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/it.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/it.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/ja.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/ja.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/ko.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/ko.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/missing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/missing.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/nl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/nl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/pl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/pl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/pt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/pt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/zh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/img/flags/zh.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/commons.e9706522487a672f20f5.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/commons.e9706522487a672f20f5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/commons.e9706522487a672f20f5.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/commons.e9706522487a672f20f5.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/web.0dc889a052231e37577a.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/web.0dc889a052231e37577a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/web.0dc889a052231e37577a.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/js/web.0dc889a052231e37577a.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/lite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/ui-studio/public/lite/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.flow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.flow.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.ui.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.flow.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.ui.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/global-hook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/product-hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/product-hooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy_now.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/models/854459f62c540f3a069c12e3f6a6b874.en.model" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/actions/call_external_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/actions/call_external_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_incoming_middleware/02_set_session_reference.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_incoming_middleware/02_set_session_reference.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_incoming_middleware/03_switch_language.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_incoming_middleware/03_switch_language.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_server_start/expose_private_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_server_start/expose_private_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_stage_changed/stage_changed.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/after_stage_changed/stage_changed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/before_bot_import/import_validations.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/before_bot_import/import_validations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/before_incoming_middleware/06_rasa_nlu.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/before_incoming_middleware/06_rasa_nlu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/on_stage_request/pipeline_approval.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/on_stage_request/pipeline_approval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/on_stage_request/stage_requested.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/examples/examples/hooks/on_stage_request/stage_requested.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/modules/custom" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/modules/custom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/modules/custom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/modules/custom/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/modules/custom/src/backend/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/modules/custom/src/backend/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/modules/custom/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +162,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\ahc-chatbot\botpress\data\global\actions" />
+      <recent name="C:\Code\ahc-chatbot\botpress\data\assets\modules" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\ahc-chatbot\botpress\data\global\config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Code\ahc-chatbot\botpress\data\assets\modules" />
     </key>
   </component>
   <component name="RunManager" selected="npm.bp">
@@ -117,6 +219,7 @@
       <workItem from="1598162756199" duration="1308000" />
       <workItem from="1598164157296" duration="6585000" />
       <workItem from="1598246446055" duration="12800000" />
+      <workItem from="1598270589589" duration="3571000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1598101273720</created>
@@ -156,6 +259,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/botpress/modules/custom" />
+    </ignored-roots>
     <MESSAGE value="Initial commit" />
     <MESSAGE value="start" />
     <option name="LAST_COMMIT_MESSAGE" value="start" />
@@ -173,30 +279,39 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1597985902708" />
-    <state width="1419" height="267" key="GridCell.Tab.0.bottom" timestamp="1598265536201">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom" timestamp="1598276222494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="267" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598265536201" />
-    <state width="1419" height="267" key="GridCell.Tab.0.center" timestamp="1598265536201">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598276222494" />
+    <state width="1515" height="211" key="GridCell.Tab.0.center" timestamp="1598276222493">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="267" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598265536201" />
-    <state width="1419" height="267" key="GridCell.Tab.0.left" timestamp="1598265536199">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598276222493" />
+    <state width="1515" height="211" key="GridCell.Tab.0.left" timestamp="1598276222493">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="267" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598265536199" />
-    <state width="1419" height="267" key="GridCell.Tab.0.right" timestamp="1598265536201">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598276222493" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right" timestamp="1598276222493">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="267" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598265536201" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598276222493" />
+    <state x="279" y="58" key="SettingsEditor" timestamp="1598270611197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598270611197" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1598265743185">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1598265743185" />
-    <state x="313" y="193" key="Vcs.Push.Dialog.v2" timestamp="1598177005108">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="334" y="173" key="Vcs.Push.Dialog.v2" timestamp="1598276736172">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="313" y="193" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1598177005108" />
+    <state x="334" y="173" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598276736172" />
     <state x="93" y="93" width="1255" height="735" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598163401935">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

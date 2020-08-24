@@ -1,0 +1,11 @@
+{
+  "$schema": "../../assets/modules/hitl/config.schema.json",
+  "paused": true,
+  "sessionExpiry": "3 days",
+  "attributes": [
+    {
+      "label": "Language",
+      "attributePath": "language"
+    }
+  ]
+}

@@ -140,5 +140,38 @@
     "createdBy": "admin",
     "createdOn": "2020-08-23T09:02:46.495Z",
     "modifiedOn": "2020-08-23T09:05:04.270Z"
+  },
+  {
+    "id": "builtin_single-choice-AMyQyG",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Olala Home",
+          "value": "shop_olala"
+        },
+        {
+          "title": "Shopee",
+          "value": "shop_shopee"
+        },
+        {
+          "title": "Lazada",
+          "value": "shop_lazada"
+        },
+        {
+          "title": "Beauty Box Online",
+          "value": "shop_beautybox"
+        },
+        {
+          "title": "Facebook Shop",
+          "value": "shop_facebook"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Thank you, Please find your product/s at:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-24T12:38:34.484Z",
+    "modifiedOn": "2020-08-24T12:38:34.484Z"
   }
 ]
