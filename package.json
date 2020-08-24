@@ -7,5 +7,4 @@
     "bp": "cd botpress && bp",
     "ngrok": "ngrok http 3000"
   }
-
 }

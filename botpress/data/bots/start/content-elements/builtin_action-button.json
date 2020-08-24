@@ -1,0 +1,15 @@
+[
+  {
+    "id": "builtin_action-button-NY8IS7",
+    "formData": {
+      "action$en": "Open URL",
+      "title$en": "Go Back",
+      "payload$en": "back",
+      "text$en": "",
+      "url$en": "https://google.com"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-24T08:06:26.664Z",
+    "modifiedOn": "2020-08-24T08:16:21.954Z"
+  }
+]

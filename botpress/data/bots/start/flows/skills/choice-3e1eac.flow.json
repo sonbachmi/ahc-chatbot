@@ -9,24 +9,21 @@
     "contentId": "builtin_single-choice-1JiMSg",
     "invalidContentId": "",
     "keywords": {
-      "red365": [
-        "red365",
-        "RED 365",
-        "red"
+      "product_red365": [
+        "product_red365",
+        "RED 365"
       ],
-      "masks": [
-        "masks",
-        "Masks",
-        "mask"
+      "product_masks": [
+        "product_masks",
+        "Masks"
       ],
-      "minimal10": [
-        "minimal10",
+      "product_minimal10": [
+        "product_minimal10",
         "Minimal 10"
       ],
-      "aesthe-youth": [
-        "aesthe-youth",
-        "Aesthe Youth",
-        "youth"
+      "product_aesthe-youth": [
+        "product_aesthe-youth",
+        "Aesthe Youth"
       ]
     },
     "config": {
@@ -46,12 +43,12 @@
           "node": "parse"
         }
       ],
-      "id": "557121"
+      "id": "063209"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"44d468dfqm\",\"contentId\":\"builtin_single-choice-1JiMSg\",\"invalidContentId\":\"\",\"keywords\":{\"red365\":[\"red365\",\"RED 365\",\"red\"],\"masks\":[\"masks\",\"Masks\",\"mask\"],\"minimal10\":[\"minimal10\",\"Minimal 10\"],\"aesthe-youth\":[\"aesthe-youth\",\"Aesthe Youth\",\"youth\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"44d468dfqm\",\"contentId\":\"builtin_single-choice-1JiMSg\",\"invalidContentId\":\"\",\"keywords\":{\"product_red365\":[\"product_red365\",\"RED 365\"],\"product_masks\":[\"product_masks\",\"Masks\"],\"product_minimal10\":[\"product_minimal10\",\"Minimal 10\"],\"product_aesthe-youth\":[\"product_aesthe-youth\",\"Aesthe Youth\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
       ],
       "next": [
         {
@@ -73,7 +70,7 @@
         }
       ],
       "onEnter": [],
-      "id": "059545"
+      "id": "065917"
     },
     {
       "name": "invalid",
@@ -90,7 +87,7 @@
           "node": "sorry"
         }
       ],
-      "id": "082097"
+      "id": "373030"
     },
     {
       "name": "sorry",
@@ -101,7 +98,7 @@
           "node": "parse"
         }
       ],
-      "id": "545385"
+      "id": "671216"
     }
   ]
 }

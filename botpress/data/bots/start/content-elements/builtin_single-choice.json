@@ -34,19 +34,19 @@
       "choices$en": [
         {
           "title": "RED 365",
-          "value": "red365"
+          "value": "product_red365"
         },
         {
           "title": "Masks",
-          "value": "masks"
+          "value": "product_masks"
         },
         {
           "title": "Minimal 10",
-          "value": "minimal10"
+          "value": "product_minimal10"
         },
         {
-          "value": "aesthe-youth",
-          "title": "Aesthe Youth"
+          "title": "Aesthe Youth",
+          "value": "product_aesthe-youth"
         }
       ],
       "markdown$en": false,
@@ -55,7 +55,7 @@
     },
     "createdBy": "admin",
     "createdOn": "2020-08-21T04:01:37.906Z",
-    "modifiedOn": "2020-08-21T04:01:37.906Z"
+    "modifiedOn": "2020-08-24T11:06:16.636Z"
   },
   {
     "id": "builtin_single-choice-24WagI",

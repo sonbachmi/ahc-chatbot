@@ -1,0 +1,27 @@
+{
+  "$schema": "../../assets/modules/channel-messenger/config.schema.json",
+  "enabled": true,
+  "appSecret": "099a1fb60febfc8a391d9969cccdf5b0",
+  "verifyToken": "ahc_prototype_chatbot",
+  "accessToken": "EAASWocsURCQBAJXL9PuW4LytSiH3vPbVloFO50RbGe3CJCZCfshrZABANzhCu9fBBJ5wD1XWZBzpJodV0Hmp70renGRzZBytBvg9A9ReAx5rUwVVzlHGa9V8ytlAOCTru33ZBnRdNAXLHeuCc3ud4CXhBiW42h0JwPoZBXZB1MZBnvxsHgWYxUYAMBP2Wwb3jCoZD",
+  "chatUserAuthDuration": "24h",
+  "getStarted": "GET STARTED",
+  "persistentMenu": [
+    {
+      "locale": "default",
+      "composer_input_disabled": false,
+      "call_to_actions": [
+        {
+          "type": "postback",
+          "title": "Go Back",
+          "payload": "GO_BACK"
+        },
+        {
+          "type": "postback",
+          "title": "Buy Now",
+          "payload": "BUY_NOW"
+        }
+      ]
+    }
+  ]
+}

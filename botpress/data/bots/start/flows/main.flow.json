@@ -2,7 +2,12 @@
   "version": "0.0.1",
   "catchAll": {
     "onReceive": [],
-    "next": []
+    "next": [
+      {
+        "condition": "temp.productDetails",
+        "node": "product_details_menu"
+      }
+    ]
   },
   "startNode": "entry",
   "nodes": [
@@ -26,28 +31,24 @@
       "flow": "skills/choice-3e1eac.flow.json",
       "next": [
         {
-          "condition": "true",
-          "node": "product_buy_now"
+          "caption": "User picked [product...]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"product_red365\"",
+          "node": ""
         },
         {
-          "caption": "User picked [red365]",
-          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"red365\"",
-          "node": "product_details_menu"
+          "caption": "User picked [product...]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"product_masks\"",
+          "node": ""
         },
         {
-          "caption": "User picked [masks]",
-          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"masks\"",
-          "node": "product_details_menu"
+          "caption": "User picked [product...]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"product_minimal10\"",
+          "node": ""
         },
         {
-          "caption": "User picked [minimal...]",
-          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"minimal10\"",
-          "node": "product_details_menu"
-        },
-        {
-          "caption": "User picked [aesthe-...]",
-          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"aesthe-youth\"",
-          "node": "product_details_menu"
+          "caption": "User picked [product...]",
+          "condition": "temp['skill-choice-ret-44d468dfqm'] == \"product_aesthe-youth\"",
+          "node": ""
         },
         {
           "caption": "On failure",
@@ -73,7 +74,7 @@
         {
           "caption": "User picked [promoti...]",
           "condition": "temp['skill-choice-ret-ommohihacr'] == \"promotion\"",
-          "node": ""
+          "node": "promotion_menu"
         },
         {
           "caption": "User picked [consult]",
@@ -104,7 +105,7 @@
         {
           "caption": "User picked [price]",
           "condition": "temp['skill-choice-ret-zd1tq75nog'] == \"price\"",
-          "node": ""
+          "node": "main_menu"
         },
         {
           "caption": "User picked [use]",
@@ -177,54 +178,30 @@
       "type": "standard"
     },
     {
-      "id": "skill-6cc442",
-      "type": "skill-call",
-      "skill": "choice",
-      "name": "back_action",
-      "flow": "skills/choice-6cc442.flow.json",
-      "next": [
-        {
-          "caption": "User picked [back]",
-          "condition": "temp['skill-choice-ret-uuxpcdcxsh'] == \"back\"",
-          "node": "#"
-        },
-        {
-          "caption": "On failure",
-          "condition": "true",
-          "node": ""
-        }
-      ],
-      "onEnter": null,
-      "onReceive": null
-    },
-    {
-      "id": "skill-b729a0",
-      "type": "skill-call",
-      "skill": "choice",
-      "name": "buy_now_action",
-      "flow": "skills/choice-b729a0.flow.json",
-      "next": [
-        {
-          "caption": "User picked [buy_now]",
-          "condition": "temp['skill-choice-ret-qq2dnu9dt0'] == \"buy_now\"",
-          "node": "buy_now_menu"
-        },
-        {
-          "caption": "On failure",
-          "condition": "true",
-          "node": ""
-        }
-      ],
-      "onEnter": null,
-      "onReceive": null
-    },
-    {
       "id": "88865f0203",
       "name": "product_buy_now",
       "next": [],
       "onEnter": [
         "say #!builtin_single-choice-dF4cqH"
       ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "234273c52d",
+      "name": "promotion",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_action-button-NY8IS7"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "474fc5d65c",
+      "name": "product_details",
+      "next": [],
+      "onEnter": [],
       "onReceive": null,
       "type": "standard"
     }

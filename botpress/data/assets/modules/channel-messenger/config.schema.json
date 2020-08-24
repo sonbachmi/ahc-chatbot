@@ -1,0 +1,174 @@
+{
+  "description": "#TopLevel",
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "description": "This this in the LOCAL config (unique to every bot/page)\nWhether or not the messenger module is enabled for this bot",
+      "default": false,
+      "type": "boolean"
+    },
+    "accessToken": {
+      "description": "This this in the LOCAL config (unique to every bot/page)\nThe Facebook Page Access Token",
+      "type": "string"
+    },
+    "appSecret": {
+      "description": "This this in the GLOBAL config (same for all bots)\nYour app's \"App Secret\"\nFind this secret in your developers.facebook.com -> your app -> Settings -> Basic -> App Secret -> Show",
+      "default": "app_secret",
+      "type": "string"
+    },
+    "verifyToken": {
+      "description": "Set this in the GLOBAL config (same for all the bots)\nThe verify token, should be a random string unique to your server. This is a random (hard to guess) string of your choosing.\nDocs: https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup/#verify_webhook",
+      "default": "verify_token",
+      "type": "string"
+    },
+    "greeting": {
+      "description": "The greeting message people will see on the welcome screen\nDocs: https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/greeting",
+      "type": "string"
+    },
+    "getStarted": {
+      "description": "The message of the welcome screen \"Get Started\" button\nDocs: https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/get-started-button",
+      "type": "string"
+    },
+    "persistentMenu": {
+      "description": "The raw persistent menu object\nDocs: https://developers.facebook.com/docs/messenger-platform/send-messages/persistent-menu",
+      "default": [],
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PersistentMenuItem"
+      }
+    },
+    "chatUserAuthDuration": {
+      "description": "The duration of the authentication session when a user authenticate through this channel.",
+      "default": "24h",
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accessToken",
+    "appSecret",
+    "chatUserAuthDuration",
+    "enabled",
+    "verifyToken"
+  ],
+  "definitions": {
+    "PersistentMenuItem": {
+      "type": "object",
+      "properties": {
+        "locale": {
+          "type": "string"
+        },
+        "composer_input_disabled": {
+          "type": "boolean"
+        },
+        "call_to_actions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/WebUrlButton"
+              },
+              {
+                "$ref": "#/definitions/PostbackButton"
+              },
+              {
+                "$ref": "#/definitions/NestedButton"
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "locale"
+      ]
+    },
+    "WebUrlButton": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "web_url"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "type",
+        "url"
+      ]
+    },
+    "PostbackButton": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "postback"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "payload": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "payload",
+        "title",
+        "type"
+      ]
+    },
+    "NestedButton": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "nested"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "call_to_actions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/WebUrlButton"
+              },
+              {
+                "$ref": "#/definitions/PostbackButton"
+              },
+              {
+                "$ref": "#/definitions/NestedButton"
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "call_to_actions",
+        "title",
+        "type"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
+

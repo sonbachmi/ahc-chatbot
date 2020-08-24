@@ -8,7 +8,7 @@
     "cors": {
       "enabled": true
     },
-    "externalUrl": "http://895731b2a1ba.ngrok.io",
+    "externalUrl": "https://fe94a805982b.ngrok.io",
     "session": {
       "enabled": false,
       "maxAge": "1h"
@@ -60,7 +60,7 @@
     },
     {
       "location": "MODULES_ROOT/channel-messenger",
-      "enabled": false
+      "enabled": true
     },
     {
       "location": "MODULES_ROOT/channel-slack",

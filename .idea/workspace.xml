@@ -2,30 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_card.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.flow.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.ui.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.flow.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.ui.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/global-hook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/__qna__9e5vl826nz_buy_now.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy_now.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/854459f62c540f3a069c12e3f6a6b874.en.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/fc897bcecae7e19b576b68a6cd83b22c.en.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/qna/9e5vl826nz_buy_now.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/modules/custom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_action-button.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/product-hooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.flow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/models/3c78bc5d16d3bac2a52d1fba135bb0aa.en.model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.flow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-3e1eac.ui.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.flow.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-6cc442.ui.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.flow.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b729a0.ui.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/global-hook.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/global/workspaces.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/workspaces.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/modules/custom" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/modules/custom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/modules/custom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/modules/custom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/modules/custom/src/backend/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/modules/custom/src/backend/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/modules/custom/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,8 @@
       <workItem from="1598087598917" duration="8490000" />
       <workItem from="1598162701156" duration="20000" />
       <workItem from="1598162756199" duration="1308000" />
-      <workItem from="1598164157296" duration="6420000" />
+      <workItem from="1598164157296" duration="6585000" />
+      <workItem from="1598246446055" duration="12800000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1598101273720</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598101304869</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="start">
+      <created>1598177002765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598177002767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,43 +153,50 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598092110960">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1598092110960" />
-    <state x="243" y="46" key="CommitChangelistDialog2" timestamp="1598101299433">
+    <state x="243" y="46" key="CommitChangelistDialog2" timestamp="1598176998235">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="243" y="46" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1598101299433" />
+    <state x="243" y="46" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1598176998235" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1597985902708">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1597985902708" />
-    <state width="1419" height="242" key="GridCell.Tab.0.bottom" timestamp="1598173810847">
+    <state width="1419" height="267" key="GridCell.Tab.0.bottom" timestamp="1598265536201">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598173810847" />
-    <state width="1419" height="242" key="GridCell.Tab.0.center" timestamp="1598173810847">
+    <state width="1419" height="267" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598265536201" />
+    <state width="1419" height="267" key="GridCell.Tab.0.center" timestamp="1598265536201">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598173810847" />
-    <state width="1419" height="242" key="GridCell.Tab.0.left" timestamp="1598173810844">
+    <state width="1419" height="267" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598265536201" />
+    <state width="1419" height="267" key="GridCell.Tab.0.left" timestamp="1598265536199">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598173810844" />
-    <state width="1419" height="242" key="GridCell.Tab.0.right" timestamp="1598173810847">
+    <state width="1419" height="267" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598265536199" />
+    <state width="1419" height="267" key="GridCell.Tab.0.right" timestamp="1598265536201">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1419" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598173810847" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1598088373483">
+    <state width="1419" height="267" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598265536201" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1598265743185">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1598088373483" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1598265743185" />
+    <state x="313" y="193" key="Vcs.Push.Dialog.v2" timestamp="1598177005108">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="313" y="193" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1598177005108" />
     <state x="93" y="93" width="1255" height="735" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598163401935">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
