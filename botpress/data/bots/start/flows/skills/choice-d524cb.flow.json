@@ -23,8 +23,8 @@
       ]
     },
     "config": {
-      "nbMaxRetries": 3,
-      "repeatChoicesOnInvalid": true
+      "nbMaxRetries": 0,
+      "repeatChoicesOnInvalid": false
     }
   },
   "nodes": [
@@ -39,12 +39,12 @@
           "node": "parse"
         }
       ],
-      "id": "527379"
+      "id": "154781"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"zd1tq75nog\",\"contentId\":\"builtin_single-choice-24WagI\",\"invalidContentId\":\"\",\"keywords\":{\"price\":[\"price\",\"Price\"],\"use\":[\"use\",\"How to use\"],\"where_buy\":[\"where_buy\",\"Where to buy\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"zd1tq75nog\",\"contentId\":\"builtin_single-choice-24WagI\",\"invalidContentId\":\"\",\"keywords\":{\"price\":[\"price\",\"Price\"],\"use\":[\"use\",\"How to use\"],\"where_buy\":[\"where_buy\",\"Where to buy\"]},\"config\":{\"nbMaxRetries\":0,\"repeatChoicesOnInvalid\":false}}"
       ],
       "next": [
         {
@@ -66,7 +66,7 @@
         }
       ],
       "onEnter": [],
-      "id": "084721"
+      "id": "406493"
     },
     {
       "name": "invalid",
@@ -75,7 +75,7 @@
       ],
       "next": [
         {
-          "condition": "Number(temp['skill-choice-invalid-count-zd1tq75nog']) > Number(3)",
+          "condition": "Number(temp['skill-choice-invalid-count-zd1tq75nog']) > Number(0)",
           "node": "#"
         },
         {
@@ -83,20 +83,18 @@
           "node": "sorry"
         }
       ],
-      "id": "708445"
+      "id": "331890"
     },
     {
       "name": "sorry",
-      "onEnter": [
-        "say #!builtin_single-choice-24WagI {\"skill\":\"choice\"}"
-      ],
+      "onEnter": [],
       "next": [
         {
           "condition": "true",
           "node": "parse"
         }
       ],
-      "id": "002383"
+      "id": "789130"
     }
   ]
 }

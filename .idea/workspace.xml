@@ -2,39 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-8cec63.flow.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-8cec63.ui.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/persistent-menu-hooks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/back.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/buy-now.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/intents/consult.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/4288dd7e998bcfc286f31bc3669937f9.en.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/models/850792e7a9a633f87912d8635e0801b0.en.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-776697.flow.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-776697.ui.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/botpress/data/global/actions/getPromotions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/config.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/config.schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/web/full.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/assets/modules/hitl/web/full.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/sample/bot.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/sample/bot.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/bot.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/bot.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_single-choice.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-2ba4b2.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-2ba4b2.flow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-2ba4b2.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-2ba4b2.ui.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.flow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-5bf3c8.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b66c6b.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b66c6b.flow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b66c6b.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-b66c6b.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-d524cb.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-d524cb.flow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-d524cb.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/skills/choice-d524cb.ui.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/product-hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/product-hooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/shop-hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/hooks/after_incoming_middleware/shop-hooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/models/8742779876c2846d0559b08b78c5bce1.en.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/models/fc897bcecae7e19b576b68a6cd83b22c.en.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/global/config/channel-messenger.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/config/channel-messenger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/global/config/hitl.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/config/hitl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botpress/data/global/actions/openUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/actions/openUrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/botpress/data/global/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/botpress/data/global/actions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -79,12 +56,13 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\ahc-chatbot\botpress\data\global\actions" />
+      <recent name="C:\Code\ahc-chatbot\botpress\data\global\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Code\ahc-chatbot\botpress\data\global\actions" />
       <recent name="C:\Code\ahc-chatbot\botpress\data\assets\modules" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Code\ahc-chatbot\botpress\data\global\config" />
     </key>
   </component>
   <component name="RunManager" selected="npm.bp">
@@ -155,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598177002767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hitl">
+      <created>1598346011194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598346011194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,41 +162,43 @@
     </ignored-roots>
     <MESSAGE value="Initial commit" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="hitl" />
+    <option name="LAST_COMMIT_MESSAGE" value="hitl" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598092110960">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="438" y="262" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1598092110960" />
-    <state x="243" y="46" key="CommitChangelistDialog2" timestamp="1598176998235">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1598346008661">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="243" y="46" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1598176998235" />
+    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598346008661" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1597985902708">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1597985902708" />
-    <state width="1419" height="230" key="GridCell.Tab.0.bottom" timestamp="1598330055274">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="242" key="GridCell.Tab.0.bottom" timestamp="1598343139251">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="230" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598330055274" />
-    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598276222494" />
-    <state width="1419" height="230" key="GridCell.Tab.0.center" timestamp="1598330055273">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598343139251" />
+    <state width="1515" height="242" key="GridCell.Tab.0.center" timestamp="1598343139251">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="230" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598330055273" />
-    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598276222493" />
-    <state width="1419" height="230" key="GridCell.Tab.0.left" timestamp="1598330055271">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598343139251" />
+    <state width="1515" height="242" key="GridCell.Tab.0.left" timestamp="1598343139251">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="230" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598330055271" />
-    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598276222493" />
-    <state width="1419" height="230" key="GridCell.Tab.0.right" timestamp="1598330055273">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1515" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598343139251" />
+    <state width="1515" height="242" key="GridCell.Tab.0.right" timestamp="1598343139251">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1419" height="230" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598330055273" />
-    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598276222493" />
+    <state width="1515" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598343139251" />
     <state x="279" y="58" key="SettingsEditor" timestamp="1598270611197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -220,11 +207,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1598265743185" />
-    <state x="334" y="173" key="Vcs.Push.Dialog.v2" timestamp="1598276736172">
+    <state x="334" y="173" key="Vcs.Push.Dialog.v2" timestamp="1598346017225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="313" y="193" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1598177005108" />
-    <state x="334" y="173" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598276736172" />
+    <state x="334" y="173" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598346017225" />
     <state x="93" y="93" width="1255" height="735" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1598163401935">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

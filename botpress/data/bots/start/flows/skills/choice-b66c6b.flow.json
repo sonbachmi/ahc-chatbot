@@ -9,22 +9,22 @@
     "contentId": "builtin_single-choice-boA6Pj",
     "invalidContentId": "",
     "keywords": {
-      "1": [
-        "1",
-        "Red 365 + Minisize Aqualuronic at Olala"
+      "promotion_1": [
+        "promotion_1",
+        "**Red 365** + Minisize Aqualuronic at Olala"
       ],
-      "2": [
-        "2",
-        "Red Serum full size + Red cream minisize free at Beauty Box"
+      "promotion_2": [
+        "promotion_2",
+        "**Red Serum** full size + Red cream minisize free at Beauty Box"
       ],
-      "3": [
-        "3",
-        "FREESHIP voucher on Shopee Mall"
+      "promotion_3": [
+        "promotion_3",
+        "**FREESHIP** voucher on Shopee Mall"
       ]
     },
     "config": {
-      "nbMaxRetries": 3,
-      "repeatChoicesOnInvalid": true
+      "nbMaxRetries": 0,
+      "repeatChoicesOnInvalid": false
     }
   },
   "nodes": [
@@ -39,12 +39,12 @@
           "node": "parse"
         }
       ],
-      "id": "160456"
+      "id": "143077"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"w9memgrb7r\",\"contentId\":\"builtin_single-choice-boA6Pj\",\"invalidContentId\":\"\",\"keywords\":{\"1\":[\"1\",\"Red 365 + Minisize Aqualuronic at Olala\"],\"2\":[\"2\",\"Red Serum full size + Red cream minisize free at Beauty Box\"],\"3\":[\"3\",\"FREESHIP voucher on Shopee Mall\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"w9memgrb7r\",\"contentId\":\"builtin_single-choice-boA6Pj\",\"invalidContentId\":\"\",\"keywords\":{\"promotion_1\":[\"promotion_1\",\"**Red 365** + Minisize Aqualuronic at Olala\"],\"promotion_2\":[\"promotion_2\",\"**Red Serum** full size + Red cream minisize free at Beauty Box\"],\"promotion_3\":[\"promotion_3\",\"**FREESHIP** voucher on Shopee Mall\"]},\"config\":{\"nbMaxRetries\":0,\"repeatChoicesOnInvalid\":false}}"
       ],
       "next": [
         {
@@ -66,7 +66,7 @@
         }
       ],
       "onEnter": [],
-      "id": "798485"
+      "id": "774702"
     },
     {
       "name": "invalid",
@@ -75,7 +75,7 @@
       ],
       "next": [
         {
-          "condition": "Number(temp['skill-choice-invalid-count-w9memgrb7r']) > Number(3)",
+          "condition": "Number(temp['skill-choice-invalid-count-w9memgrb7r']) > Number(0)",
           "node": "#"
         },
         {
@@ -83,20 +83,18 @@
           "node": "sorry"
         }
       ],
-      "id": "836163"
+      "id": "253274"
     },
     {
       "name": "sorry",
-      "onEnter": [
-        "say #!builtin_single-choice-boA6Pj {\"skill\":\"choice\"}"
-      ],
+      "onEnter": [],
       "next": [
         {
           "condition": "true",
           "node": "parse"
         }
       ],
-      "id": "313585"
+      "id": "029590"
     }
   ]
 }

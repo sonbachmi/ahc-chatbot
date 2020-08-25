@@ -1,0 +1,105 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "0d06z3nzmd",
+    "contentId": "builtin_single-choice-yby3zK",
+    "invalidContentId": "",
+    "keywords": {
+      "main_product": [
+        "main_product"
+      ],
+      "promotion": [
+        "promotion",
+        "Promotion"
+      ],
+      "main_consult": [
+        "main_consult",
+        "consult"
+      ],
+      "track_order": [
+        "track_order",
+        "Order tracking"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": true
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-yby3zK {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "987029"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"0d06z3nzmd\",\"contentId\":\"builtin_single-choice-yby3zK\",\"invalidContentId\":\"\",\"keywords\":{\"main_product\":[\"main_product\"],\"promotion\":[\"promotion\",\"Promotion\"],\"main_consult\":[\"main_consult\",\"consult\"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-0d06z3nzmd'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "154888"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"0d06z3nzmd\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-0d06z3nzmd']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "621693"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-yby3zK {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "696600"
+    }
+  ]
+}

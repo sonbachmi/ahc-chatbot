@@ -27,7 +27,7 @@
       ]
     },
     "config": {
-      "nbMaxRetries": 3,
+      "nbMaxRetries": 0,
       "repeatChoicesOnInvalid": false
     }
   },
@@ -43,12 +43,12 @@
           "node": "parse"
         }
       ],
-      "id": "063209"
+      "id": "545894"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"44d468dfqm\",\"contentId\":\"builtin_single-choice-1JiMSg\",\"invalidContentId\":\"\",\"keywords\":{\"product_red365\":[\"product_red365\",\"RED 365\"],\"product_masks\":[\"product_masks\",\"Masks\"],\"product_minimal10\":[\"product_minimal10\",\"Minimal 10\"],\"product_aesthe-youth\":[\"product_aesthe-youth\",\"Aesthe Youth\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"44d468dfqm\",\"contentId\":\"builtin_single-choice-1JiMSg\",\"invalidContentId\":\"\",\"keywords\":{\"product_red365\":[\"product_red365\",\"RED 365\"],\"product_masks\":[\"product_masks\",\"Masks\"],\"product_minimal10\":[\"product_minimal10\",\"Minimal 10\"],\"product_aesthe-youth\":[\"product_aesthe-youth\",\"Aesthe Youth\"]},\"config\":{\"nbMaxRetries\":0,\"repeatChoicesOnInvalid\":false}}"
       ],
       "next": [
         {
@@ -70,7 +70,7 @@
         }
       ],
       "onEnter": [],
-      "id": "065917"
+      "id": "086343"
     },
     {
       "name": "invalid",
@@ -79,7 +79,7 @@
       ],
       "next": [
         {
-          "condition": "Number(temp['skill-choice-invalid-count-44d468dfqm']) > Number(3)",
+          "condition": "Number(temp['skill-choice-invalid-count-44d468dfqm']) > Number(0)",
           "node": "#"
         },
         {
@@ -87,7 +87,7 @@
           "node": "sorry"
         }
       ],
-      "id": "373030"
+      "id": "962317"
     },
     {
       "name": "sorry",
@@ -98,7 +98,7 @@
           "node": "parse"
         }
       ],
-      "id": "671216"
+      "id": "052140"
     }
   ]
 }

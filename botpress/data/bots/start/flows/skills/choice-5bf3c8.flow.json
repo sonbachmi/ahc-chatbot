@@ -16,14 +16,14 @@
         "promotion",
         "Promotion"
       ],
+      "track_order": [
+        "track_order",
+        "Order tracking"
+      ],
       "consult": [
         "consult",
         "consultant",
         "skin care"
-      ],
-      "track_order": [
-        "track_order",
-        "Order tracking"
       ]
     },
     "config": {
@@ -43,12 +43,12 @@
           "node": "parse"
         }
       ],
-      "id": "927488"
+      "id": "816982"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\"],\"promotion\":[\"promotion\",\"Promotion\"],\"consult\":[\"consult\",\"consultant\",\"skin care\"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\"],\"promotion\":[\"promotion\",\"Promotion\"],\"track_order\":[\"track_order\",\"Order tracking\"],\"consult\":[\"consult\",\"consultant\",\"skin care\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
       ],
       "next": [
         {
@@ -70,7 +70,7 @@
         }
       ],
       "onEnter": [],
-      "id": "286066"
+      "id": "814731"
     },
     {
       "name": "invalid",
@@ -87,7 +87,7 @@
           "node": "sorry"
         }
       ],
-      "id": "094337"
+      "id": "936368"
     },
     {
       "name": "sorry",
@@ -100,7 +100,7 @@
           "node": "parse"
         }
       ],
-      "id": "918872"
+      "id": "250471"
     }
   ]
 }

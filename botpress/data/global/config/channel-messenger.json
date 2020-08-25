@@ -1,6 +1,6 @@
 {
   "$schema": "../../assets/modules/channel-messenger/config.schema.json",
-  "enabled": true,
+  "enabled": false,
   "appSecret": "099a1fb60febfc8a391d9969cccdf5b0",
   "verifyToken": "ahc_prototype_chatbot",
   "accessToken": "EAASWocsURCQBAJXL9PuW4LytSiH3vPbVloFO50RbGe3CJCZCfshrZABANzhCu9fBBJ5wD1XWZBzpJodV0Hmp70renGRzZBytBvg9A9ReAx5rUwVVzlHGa9V8ytlAOCTru33ZBnRdNAXLHeuCc3ud4CXhBiW42h0JwPoZBXZB1MZBnvxsHgWYxUYAMBP2Wwb3jCoZD",

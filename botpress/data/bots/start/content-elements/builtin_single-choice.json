@@ -12,12 +12,12 @@
           "value": "promotion"
         },
         {
-          "title": "Consultant: Which products for each skin concern? ",
-          "value": "consult"
-        },
-        {
           "title": "Order tracking",
           "value": "track_order"
+        },
+        {
+          "title": "Consultant: Which products for each skin concern? ",
+          "value": "consult"
         }
       ],
       "markdown$en": false,
@@ -26,7 +26,7 @@
     },
     "createdBy": "admin",
     "createdOn": "2020-08-21T03:31:30.620Z",
-    "modifiedOn": "2020-08-21T03:57:09.703Z"
+    "modifiedOn": "2020-08-25T09:15:27.962Z"
   },
   {
     "id": "builtin_single-choice-1JiMSg",
@@ -88,15 +88,15 @@
       "choices$en": [
         {
           "title": "Red 365 + Minisize Aqualuronic at Olala",
-          "value": "1"
+          "value": "promotion_1"
         },
         {
           "title": "Red Serum full size + Red cream minisize free at Beauty Box",
-          "value": "2"
+          "value": "promotion_2"
         },
         {
           "title": "FREESHIP voucher on Shopee Mall",
-          "value": "3"
+          "value": "promotion_3"
         }
       ],
       "markdown$en": false,
@@ -105,7 +105,7 @@
     },
     "createdBy": "admin",
     "createdOn": "2020-08-22T12:44:18.018Z",
-    "modifiedOn": "2020-08-22T12:44:18.018Z"
+    "modifiedOn": "2020-08-25T08:49:37.907Z"
   },
   {
     "id": "builtin_single-choice-dF4cqH",
@@ -265,5 +265,84 @@
     "createdBy": "admin",
     "createdOn": "2020-08-25T06:40:39.933Z",
     "modifiedOn": "2020-08-25T06:40:39.933Z"
+  },
+  {
+    "id": "builtin_single-choice-tv7tkH",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Olala Home",
+          "value": "track_olala"
+        },
+        {
+          "title": "Shopee",
+          "value": "track_shopee"
+        },
+        {
+          "title": "Lazada",
+          "value": "track_lazada"
+        },
+        {
+          "title": "Beauty Box Online",
+          "value": "track_beautybox"
+        },
+        {
+          "title": "Facebook Shop",
+          "value": "track_facebook"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Thank you. Please tell us where did you make your purchase:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T07:50:39.647Z",
+    "modifiedOn": "2020-08-25T07:50:39.647Z"
+  },
+  {
+    "id": "builtin_single-choice-RaX2Up",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Shopee Link",
+          "value": "track_shopee"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Thank you. We are connecting you to our e-Commerce support team. Or you can track your order via this link."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T07:57:17.748Z",
+    "modifiedOn": "2020-08-25T07:57:17.748Z"
+  },
+  {
+    "id": "builtin_single-choice-yby3zK",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Product information: Price / Where to buy ",
+          "value": "main_product"
+        },
+        {
+          "title": "Promotion",
+          "value": "promotion"
+        },
+        {
+          "title": "Consultant: Which products for each skin concern? ",
+          "value": "main_consult"
+        },
+        {
+          "title": "Order tracking",
+          "value": "track_order"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Hi, thank you for your message. Please choose the below topic:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T09:18:42.023Z",
+    "modifiedOn": "2020-08-25T09:33:52.294Z"
   }
 ]

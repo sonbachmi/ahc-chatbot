@@ -31,8 +31,8 @@
       ]
     },
     "config": {
-      "nbMaxRetries": 3,
-      "repeatChoicesOnInvalid": true
+      "nbMaxRetries": 0,
+      "repeatChoicesOnInvalid": false
     }
   },
   "nodes": [
@@ -47,12 +47,12 @@
           "node": "parse"
         }
       ],
-      "id": "688280"
+      "id": "205980"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"03bodpsog7\",\"contentId\":\"builtin_single-choice-AMyQyG\",\"invalidContentId\":\"\",\"keywords\":{\"shop_olala\":[\"shop_olala\",\"Olala Home\"],\"shop_shopee\":[\"shop_shopee\",\"Shopee\"],\"shop_lazada\":[\"shop_lazada\",\"Lazada\"],\"shop_beautybox\":[\"shop_beautybox\",\"Beauty Box Online\"],\"shop_facebook\":[\"shop_facebook\",\"Facebook Shop\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"03bodpsog7\",\"contentId\":\"builtin_single-choice-AMyQyG\",\"invalidContentId\":\"\",\"keywords\":{\"shop_olala\":[\"shop_olala\",\"Olala Home\"],\"shop_shopee\":[\"shop_shopee\",\"Shopee\"],\"shop_lazada\":[\"shop_lazada\",\"Lazada\"],\"shop_beautybox\":[\"shop_beautybox\",\"Beauty Box Online\"],\"shop_facebook\":[\"shop_facebook\",\"Facebook Shop\"]},\"config\":{\"nbMaxRetries\":0,\"repeatChoicesOnInvalid\":false}}"
       ],
       "next": [
         {
@@ -74,7 +74,7 @@
         }
       ],
       "onEnter": [],
-      "id": "578172"
+      "id": "331193"
     },
     {
       "name": "invalid",
@@ -83,7 +83,7 @@
       ],
       "next": [
         {
-          "condition": "Number(temp['skill-choice-invalid-count-03bodpsog7']) > Number(3)",
+          "condition": "Number(temp['skill-choice-invalid-count-03bodpsog7']) > Number(0)",
           "node": "#"
         },
         {
@@ -91,20 +91,18 @@
           "node": "sorry"
         }
       ],
-      "id": "294302"
+      "id": "336910"
     },
     {
       "name": "sorry",
-      "onEnter": [
-        "say #!builtin_single-choice-AMyQyG {\"skill\":\"choice\"}"
-      ],
+      "onEnter": [],
       "next": [
         {
           "condition": "true",
           "node": "parse"
         }
       ],
-      "id": "673434"
+      "id": "782353"
     }
   ]
 }

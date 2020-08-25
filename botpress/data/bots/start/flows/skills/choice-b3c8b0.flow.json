@@ -1,0 +1,108 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "43gbt7e67y",
+    "contentId": "builtin_single-choice-tv7tkH",
+    "invalidContentId": "",
+    "keywords": {
+      "track_olala": [
+        "track_olala",
+        "Olala Home"
+      ],
+      "track_shopee": [
+        "track_shopee",
+        "Shopee"
+      ],
+      "track_lazada": [
+        "track_lazada",
+        "Lazada"
+      ],
+      "track_beautybox": [
+        "track_beautybox",
+        "Beauty Box Online"
+      ],
+      "track_facebook": [
+        "track_facebook",
+        "Facebook Shop"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 0,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-tv7tkH {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "529147"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"43gbt7e67y\",\"contentId\":\"builtin_single-choice-tv7tkH\",\"invalidContentId\":\"\",\"keywords\":{\"track_olala\":[\"track_olala\",\"Olala Home\"],\"track_shopee\":[\"track_shopee\",\"Shopee\"],\"track_lazada\":[\"track_lazada\",\"Lazada\"],\"track_beautybox\":[\"track_beautybox\",\"Beauty Box Online\"],\"track_facebook\":[\"track_facebook\",\"Facebook Shop\"]},\"config\":{\"nbMaxRetries\":0,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-43gbt7e67y'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "167163"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"43gbt7e67y\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-43gbt7e67y']) > Number(0)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "208254"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "228086"
+    }
+  ]
+}

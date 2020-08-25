@@ -8,20 +8,12 @@
         "node": "product_details_menu"
       },
       {
-        "condition": "temp.gotoShop",
-        "node": "promotion_menu"
-      },
-      {
         "condition": "temp.goto === 'shop'",
         "node": "shop_menu"
       },
       {
-        "condition": "event.nlu.intent.name === 'buy-now' && event.nlu.intent.confidence>0.99",
-        "node": "shop_menu"
-      },
-      {
         "condition": "event.nlu.intent.name === 'back'",
-        "node": "main_menu"
+        "node": "main"
       },
       {
         "condition": "event.nlu.intent.name === 'consult'",
@@ -37,7 +29,7 @@
       "next": [
         {
           "condition": "true",
-          "node": "main_menu"
+          "node": "main"
         }
       ],
       "onEnter": [],
@@ -104,7 +96,7 @@
         {
           "caption": "User picked [track_o...]",
           "condition": "temp['skill-choice-ret-ommohihacr'] == \"track_order\"",
-          "node": ""
+          "node": "order_track_menu"
         },
         {
           "caption": "On failure",
@@ -154,18 +146,18 @@
       "flow": "skills/choice-b66c6b.flow.json",
       "next": [
         {
-          "caption": "User picked [1]",
-          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"1\"",
+          "caption": "User picked [promoti...]",
+          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"promotion_1\"",
           "node": ""
         },
         {
-          "caption": "User picked [2]",
-          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"2\"",
+          "caption": "User picked [promoti...]",
+          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"promotion_2\"",
           "node": ""
         },
         {
-          "caption": "User picked [3]",
-          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"3\"",
+          "caption": "User picked [promoti...]",
+          "condition": "temp['skill-choice-ret-w9memgrb7r'] == \"promotion_3\"",
           "node": ""
         },
         {
@@ -193,8 +185,12 @@
       "id": "234273c52d",
       "name": "promotion",
       "next": [],
-      "onEnter": [],
-      "onReceive": null,
+      "onEnter": [
+        "say #!builtin_single-choice-boA6Pj"
+      ],
+      "onReceive": [
+        "openUrl {\"url\":\"https://google.com\"}"
+      ],
       "type": "standard"
     },
     {
@@ -307,12 +303,12 @@
         {
           "caption": "User picked [conscat...]",
           "condition": "temp['skill-choice-ret-hg0uj3h19q'] == \"conscat_oily_t_zone\"",
-          "node": ""
+          "node": "consult_oily_skin_acne_menu"
         },
         {
           "caption": "User picked [conscat...]",
           "condition": "temp['skill-choice-ret-hg0uj3h19q'] == \"conscat_oily_all_face\"",
-          "node": ""
+          "node": "consult_oily_skin_acne_menu"
         },
         {
           "caption": "On failure",
@@ -338,12 +334,12 @@
         {
           "caption": "User picked [sometim...]",
           "condition": "temp['skill-choice-ret-rr8y49f7za'] == \"sometimes\"",
-          "node": ""
+          "node": "conscat_oily_skin_product_menu"
         },
         {
           "caption": "User picked [rarely]",
           "condition": "temp['skill-choice-ret-rr8y49f7za'] == \"rarely\"",
-          "node": ""
+          "node": "conscat_oily_skin_product_menu"
         },
         {
           "caption": "On failure",
@@ -370,6 +366,115 @@
           "caption": "User picked [conspro...]",
           "condition": "temp['skill-choice-ret-i14o99fmhg'] == \"consprod_aesthe_youth\"",
           "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-b3c8b0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "order_track_menu",
+      "flow": "skills/choice-b3c8b0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [track_o...]",
+          "condition": "temp['skill-choice-ret-43gbt7e67y'] == \"track_olala\"",
+          "node": "track_response"
+        },
+        {
+          "caption": "User picked [track_s...]",
+          "condition": "temp['skill-choice-ret-43gbt7e67y'] == \"track_shopee\"",
+          "node": "track_response_menu"
+        },
+        {
+          "caption": "User picked [track_l...]",
+          "condition": "temp['skill-choice-ret-43gbt7e67y'] == \"track_lazada\"",
+          "node": "track_response_menu"
+        },
+        {
+          "caption": "User picked [track_b...]",
+          "condition": "temp['skill-choice-ret-43gbt7e67y'] == \"track_beautybox\"",
+          "node": "track_response_menu"
+        },
+        {
+          "caption": "User picked [track_f...]",
+          "condition": "temp['skill-choice-ret-43gbt7e67y'] == \"track_facebook\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "track_response_menu"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-f56017",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "track_response_menu",
+      "flow": "skills/choice-f56017.flow.json",
+      "next": [
+        {
+          "caption": "User picked [track_s...]",
+          "condition": "temp['skill-choice-ret-8p83ny02lf'] == \"track_shopee\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "f097051e7b",
+      "name": "track_response",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_single-choice-RaX2Up",
+        "trackOrder {\"shop\":\"Shopee\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-776697",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "main",
+      "flow": "skills/choice-776697.flow.json",
+      "next": [
+        {
+          "caption": "User picked [main_pr...]",
+          "condition": "temp['skill-choice-ret-0d06z3nzmd'] == \"main_product\"",
+          "node": "product_menu"
+        },
+        {
+          "caption": "User picked [promoti...]",
+          "condition": "temp['skill-choice-ret-0d06z3nzmd'] == \"promotion\"",
+          "node": "promotion"
+        },
+        {
+          "caption": "User picked [main_co...]",
+          "condition": "temp['skill-choice-ret-0d06z3nzmd'] == \"main_consult\"",
+          "node": "consult_menu"
+        },
+        {
+          "caption": "User picked [track_o...]",
+          "condition": "temp['skill-choice-ret-0d06z3nzmd'] == \"track_order\"",
+          "node": "order_track_menu"
         },
         {
           "caption": "On failure",
