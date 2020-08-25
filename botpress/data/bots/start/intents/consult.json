@@ -1,0 +1,13 @@
+{
+  "name": "consult",
+  "utterances": {
+    "en": [
+      "consult",
+      "consultant"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

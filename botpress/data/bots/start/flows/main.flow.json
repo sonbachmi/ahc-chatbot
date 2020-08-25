@@ -10,6 +10,22 @@
       {
         "condition": "temp.gotoShop",
         "node": "promotion_menu"
+      },
+      {
+        "condition": "temp.goto === 'shop'",
+        "node": "shop_menu"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'buy-now' && event.nlu.intent.confidence>0.99",
+        "node": "shop_menu"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'back'",
+        "node": "main_menu"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'consult'",
+        "node": "consult_menu"
       }
     ]
   },
@@ -57,7 +73,7 @@
         {
           "caption": "On failure",
           "condition": "true",
-          "node": ""
+          "node": "fallback"
         }
       ],
       "onEnter": null,
@@ -83,7 +99,7 @@
         {
           "caption": "User picked [consult]",
           "condition": "temp['skill-choice-ret-ommohihacr'] == \"consult\"",
-          "node": ""
+          "node": "consult_menu"
         },
         {
           "caption": "User picked [track_o...]",
@@ -174,26 +190,6 @@
       "type": "standard"
     },
     {
-      "id": "8e89582864",
-      "name": "buy_now_menu",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_text-v3A_RV"
-      ],
-      "onReceive": null,
-      "type": "standard"
-    },
-    {
-      "id": "88865f0203",
-      "name": "product_buy_now",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_single-choice-dF4cqH"
-      ],
-      "onReceive": null,
-      "type": "standard"
-    },
-    {
       "id": "234273c52d",
       "name": "promotion",
       "next": [],
@@ -206,16 +202,6 @@
       "name": "product_details",
       "next": [],
       "onEnter": [],
-      "onReceive": null,
-      "type": "standard"
-    },
-    {
-      "id": "f7cc30f2b1",
-      "name": "where_buy",
-      "next": [],
-      "onEnter": [
-        "say #!builtin_single-choice-AMyQyG"
-      ],
       "onReceive": null,
       "type": "standard"
     },
@@ -249,6 +235,140 @@
         {
           "caption": "User picked [shop_fa...]",
           "condition": "temp['skill-choice-ret-03bodpsog7'] == \"shop_facebook\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "94ae6a4b65",
+      "name": "fallback",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-0_9snY"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b0580bc2f1",
+      "name": "consult",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_single-choice-kMsazi"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-8cec63",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "consult_menu",
+      "flow": "skills/choice-8cec63.flow.json",
+      "next": [
+        {
+          "caption": "User picked [consult...]",
+          "condition": "temp['skill-choice-ret-md215ffcc6'] == \"consult_oily_skin\"",
+          "node": "consult_oily_menu"
+        },
+        {
+          "caption": "User picked [consult...]",
+          "condition": "temp['skill-choice-ret-md215ffcc6'] == \"consult_anti_aging\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [consult...]",
+          "condition": "temp['skill-choice-ret-md215ffcc6'] == \"consult_dark_spots\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-982f3e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "consult_oily_menu",
+      "flow": "skills/choice-982f3e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [conscat...]",
+          "condition": "temp['skill-choice-ret-hg0uj3h19q'] == \"conscat_oily_t_zone\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [conscat...]",
+          "condition": "temp['skill-choice-ret-hg0uj3h19q'] == \"conscat_oily_all_face\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-8eafab",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "consult_oily_skin_acne_menu",
+      "flow": "skills/choice-8eafab.flow.json",
+      "next": [
+        {
+          "caption": "User picked [always]",
+          "condition": "temp['skill-choice-ret-rr8y49f7za'] == \"always\"",
+          "node": "conscat_oily_skin_product_menu"
+        },
+        {
+          "caption": "User picked [sometim...]",
+          "condition": "temp['skill-choice-ret-rr8y49f7za'] == \"sometimes\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [rarely]",
+          "condition": "temp['skill-choice-ret-rr8y49f7za'] == \"rarely\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-28fd25",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "conscat_oily_skin_product_menu",
+      "flow": "skills/choice-28fd25.flow.json",
+      "next": [
+        {
+          "caption": "User picked [conspro...]",
+          "condition": "temp['skill-choice-ret-i14o99fmhg'] == \"consprod_minimal10\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [conspro...]",
+          "condition": "temp['skill-choice-ret-i14o99fmhg'] == \"consprod_aesthe_youth\"",
           "node": ""
         },
         {

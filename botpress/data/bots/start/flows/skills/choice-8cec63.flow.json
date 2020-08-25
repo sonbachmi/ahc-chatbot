@@ -1,0 +1,102 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "md215ffcc6",
+    "contentId": "builtin_single-choice-kMsazi",
+    "invalidContentId": "",
+    "keywords": {
+      "consult_oily_skin": [
+        "consult_oily_skin",
+        "Oily Skin care"
+      ],
+      "consult_anti_aging": [
+        "consult_anti_aging",
+        "Anti aging"
+      ],
+      "consult_dark_spots": [
+        "consult_dark_spots",
+        "Dark Spots"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": true
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-kMsazi {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "196078"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"md215ffcc6\",\"contentId\":\"builtin_single-choice-kMsazi\",\"invalidContentId\":\"\",\"keywords\":{\"consult_oily_skin\":[\"consult_oily_skin\",\"Oily Skin care\"],\"consult_anti_aging\":[\"consult_anti_aging\",\"Anti aging\"],\"consult_dark_spots\":[\"consult_dark_spots\",\"Dark Spots\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-md215ffcc6'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "710185"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"md215ffcc6\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-md215ffcc6']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "192486"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-kMsazi {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "525051"
+    }
+  ]
+}

@@ -173,5 +173,97 @@
     "createdBy": "admin",
     "createdOn": "2020-08-24T12:38:34.484Z",
     "modifiedOn": "2020-08-24T12:38:34.484Z"
+  },
+  {
+    "id": "builtin_single-choice-kMsazi",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Oily Skin care",
+          "value": "consult_oily_skin"
+        },
+        {
+          "title": "Anti aging",
+          "value": "consult_anti_aging"
+        },
+        {
+          "title": "Dark Spots",
+          "value": "consult_dark_spots"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Thank you, we will connect you with our customer service in a moment"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T05:32:52.661Z",
+    "modifiedOn": "2020-08-25T05:32:52.661Z"
+  },
+  {
+    "id": "builtin_single-choice-t1HhiY",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "T-Zone",
+          "value": "conscat_oily_t_zone"
+        },
+        {
+          "title": "All face",
+          "value": "conscat_oily_all_face"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Which area of your face is oily?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T06:19:56.518Z",
+    "modifiedOn": "2020-08-25T06:19:56.518Z"
+  },
+  {
+    "id": "builtin_single-choice-QKRBwV",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Always",
+          "value": "always"
+        },
+        {
+          "title": "Sometimes",
+          "value": "sometimes"
+        },
+        {
+          "title": "Rarely",
+          "value": "rarely"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Do you have acne?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T06:36:56.103Z",
+    "modifiedOn": "2020-08-25T06:36:56.103Z"
+  },
+  {
+    "id": "builtin_single-choice-VCSSRy",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Minimal 10",
+          "value": "consprod_minimal10"
+        },
+        {
+          "title": "Aesthe Youth",
+          "value": "consprod_aesthe_youth"
+        }
+      ],
+      "markdown$en": false,
+      "typing$en": true,
+      "text$en": "Suitable products for you"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-08-25T06:40:39.933Z",
+    "modifiedOn": "2020-08-25T06:40:39.933Z"
   }
 ]

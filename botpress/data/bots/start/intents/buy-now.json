@@ -1,0 +1,17 @@
+{
+  "name": "buy-now",
+  "utterances": {
+    "en": [
+      "Buy Now",
+      "shop",
+      "shop now",
+      "go to shop",
+      "take me to shop",
+      "where to buy"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

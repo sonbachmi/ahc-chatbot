@@ -14,12 +14,12 @@
         {
           "type": "postback",
           "title": "Go Back",
-          "payload": "GO_BACK"
+          "payload": "PMENU_BACK"
         },
         {
           "type": "postback",
           "title": "Buy Now",
-          "payload": "BUY_NOW"
+          "payload": "PMENU_BUY"
         }
       ]
     }

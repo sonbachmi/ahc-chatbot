@@ -28,7 +28,7 @@
     },
     "config": {
       "nbMaxRetries": 3,
-      "repeatChoicesOnInvalid": false
+      "repeatChoicesOnInvalid": true
     }
   },
   "nodes": [
@@ -43,12 +43,12 @@
           "node": "parse"
         }
       ],
-      "id": "566584"
+      "id": "927488"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\"],\"promotion\":[\"promotion\",\"Promotion\"],\"consult\":[\"consult\",\"consultant\",\"skin care\"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"ommohihacr\",\"contentId\":\"builtin_single-choice-vCRQIR\",\"invalidContentId\":\"\",\"keywords\":{\"product\":[\"product\"],\"promotion\":[\"promotion\",\"Promotion\"],\"consult\":[\"consult\",\"consultant\",\"skin care\"],\"track_order\":[\"track_order\",\"Order tracking\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
       ],
       "next": [
         {
@@ -70,7 +70,7 @@
         }
       ],
       "onEnter": [],
-      "id": "758477"
+      "id": "286066"
     },
     {
       "name": "invalid",
@@ -87,18 +87,20 @@
           "node": "sorry"
         }
       ],
-      "id": "884184"
+      "id": "094337"
     },
     {
       "name": "sorry",
-      "onEnter": [],
+      "onEnter": [
+        "say #!builtin_single-choice-vCRQIR {\"skill\":\"choice\"}"
+      ],
       "next": [
         {
           "condition": "true",
           "node": "parse"
         }
       ],
-      "id": "206134"
+      "id": "918872"
     }
   ]
 }

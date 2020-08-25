@@ -1,5 +1,7 @@
   async function hook() {
-    const payload = event.payload.payload.toLowerCase()
+    let payload = event.payload.payload
+    if (!payload) return
+    payload = payload.toLowerCase()
     if (event.type === 'quick_reply' && payload.startsWith('shop_')) {
       const shop = payload.substr(5)
       event.nlu.intent.name = shop

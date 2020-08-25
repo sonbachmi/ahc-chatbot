@@ -1,0 +1,13 @@
+{
+  "name": "back",
+  "utterances": {
+    "en": [
+      "back",
+      "Go Back"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

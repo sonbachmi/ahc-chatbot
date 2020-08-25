@@ -1,6 +1,6 @@
 {
   "$schema": "../../assets/modules/hitl/config.schema.json",
-  "paused": true,
+  "paused": false,
   "sessionExpiry": "3 days",
   "attributes": [
     {

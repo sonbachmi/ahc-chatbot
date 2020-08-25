@@ -1,6 +1,6 @@
 {
   "locked": false,
-  "disabled": false,
+  "disabled": true,
   "private": false,
   "details": {},
   "$schema": "../../bot.config.schema.json",

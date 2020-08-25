@@ -8,7 +8,7 @@
     "cors": {
       "enabled": true
     },
-    "externalUrl": "https://fe94a805982b.ngrok.io",
+    "externalUrl": "https://9bfc990452d3.ngrok.io",
     "session": {
       "enabled": false,
       "maxAge": "1h"

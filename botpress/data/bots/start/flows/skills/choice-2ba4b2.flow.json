@@ -32,7 +32,7 @@
     },
     "config": {
       "nbMaxRetries": 3,
-      "repeatChoicesOnInvalid": false
+      "repeatChoicesOnInvalid": true
     }
   },
   "nodes": [
@@ -47,12 +47,12 @@
           "node": "parse"
         }
       ],
-      "id": "759606"
+      "id": "688280"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"03bodpsog7\",\"contentId\":\"builtin_single-choice-AMyQyG\",\"invalidContentId\":\"\",\"keywords\":{\"shop_olala\":[\"shop_olala\",\"Olala Home\"],\"shop_shopee\":[\"shop_shopee\",\"Shopee\"],\"shop_lazada\":[\"shop_lazada\",\"Lazada\"],\"shop_beautybox\":[\"shop_beautybox\",\"Beauty Box Online\"],\"shop_facebook\":[\"shop_facebook\",\"Facebook Shop\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"03bodpsog7\",\"contentId\":\"builtin_single-choice-AMyQyG\",\"invalidContentId\":\"\",\"keywords\":{\"shop_olala\":[\"shop_olala\",\"Olala Home\"],\"shop_shopee\":[\"shop_shopee\",\"Shopee\"],\"shop_lazada\":[\"shop_lazada\",\"Lazada\"],\"shop_beautybox\":[\"shop_beautybox\",\"Beauty Box Online\"],\"shop_facebook\":[\"shop_facebook\",\"Facebook Shop\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true}}"
       ],
       "next": [
         {
@@ -74,7 +74,7 @@
         }
       ],
       "onEnter": [],
-      "id": "497799"
+      "id": "578172"
     },
     {
       "name": "invalid",
@@ -91,18 +91,20 @@
           "node": "sorry"
         }
       ],
-      "id": "250801"
+      "id": "294302"
     },
     {
       "name": "sorry",
-      "onEnter": [],
+      "onEnter": [
+        "say #!builtin_single-choice-AMyQyG {\"skill\":\"choice\"}"
+      ],
       "next": [
         {
           "condition": "true",
           "node": "parse"
         }
       ],
-      "id": "979629"
+      "id": "673434"
     }
   ]
 }
