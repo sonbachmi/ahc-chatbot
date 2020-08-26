@@ -186,19 +186,12 @@
       "name": "promotion",
       "next": [],
       "onEnter": [
+        "getPromotions {}",
         "say #!builtin_single-choice-boA6Pj"
       ],
       "onReceive": [
         "openUrl {\"url\":\"https://google.com\"}"
       ],
-      "type": "standard"
-    },
-    {
-      "id": "474fc5d65c",
-      "name": "product_details",
-      "next": [],
-      "onEnter": [],
-      "onReceive": null,
       "type": "standard"
     },
     {
