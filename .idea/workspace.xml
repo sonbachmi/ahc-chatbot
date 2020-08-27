@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8d33b78-92d7-431e-88ab-2c4c72582796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/botpress/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/global/actions/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/botpress/data/global/actions/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/content-elements/builtin_text.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.flow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/bots/start/flows/main.ui.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/global/actions/getPromotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/actions/getPromotions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/global/botpress.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/botpress/data/storage/core.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
