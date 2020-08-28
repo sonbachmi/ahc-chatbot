@@ -7,7 +7,7 @@
     "serve": "nodemon -w server.js -w .env server.js",
     "start": "webpack --watch --progress"
   },
-  "author": "Son Nguyen <son@bachmi.com>",
+  "author": "Son Nguyen <nguyenhong.son@bonseyjaden.com>",
   "private": true,
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -41,18 +41,17 @@
     "@salte-auth/popup": "^3.0.2",
     "@salte-auth/redirect": "^3.0.2",
     "@salte-auth/salte-auth": "^3.1.4",
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
     "grommet": "^2.15.0",
     "grommet-icons": "^4.4.0",
     "http-proxy-middleware": "^1.0.5",
-    "jso": "^4.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "regenerator-runtime": "^0.13.7",
     "styled-components": "^5.1.1",
-    "universal-cookie": "^4.0.3",
     "whatwg-fetch": "^3.4.0"
   }
 }

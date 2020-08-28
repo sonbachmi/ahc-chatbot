@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 require('dotenv').config();
 
@@ -18,8 +19,8 @@ async function main() {
     if (enableCors) {
         const origin = process.env.UI_SERVER_ORIGIN || 'http://localhost:3000';
         const methods = 'POST';
-        const cors = { origin, methods, credentials: true };
-        app.use(cors);
+        const corsOptions = { origin, methods, credentials: true };
+        app.use(cors(corsOptions));
     }
 
     const port = process.env.API_SERVER_PORT || 4000;

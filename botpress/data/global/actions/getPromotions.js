@@ -27,8 +27,7 @@ const getPromotions = async () => {
         limit: '10',
     });
     const brands = response.data;
-    response = await lazada.getCategoryTree({
-    });
+    response = await lazada.getCategoryTree({});
     const categories = response.data;
     response = await lazada.getProducts({
         filter: 'all',
