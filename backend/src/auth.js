@@ -13,15 +13,14 @@ const lazada = new LazadaAPI('122309', 'sjcJVjql9uGKQys0XgE7AEgynMITsP9M', 'VIET
 const origin = process.env.UI_SERVER_ORIGIN || 'http://localhost:3000';
 routes.use(cors({ origin, credentials: true }));
 
-
 async function getAccessToken(code) {
     if (!code) return;
-    const token = await lazada.generateAccessToken({code});
-    lazada.accessToken = token;
-    return token;
+    const {access_token} = await lazada.generateAccessToken({code});
+    lazada.accessToken = access_token;
+    return access_token;
 }
 
-async function getData(accessToken) {
+async function getData() {
     let response = await lazada.getBrands({
         offset: '0',
         limit: '10',
@@ -30,7 +29,6 @@ async function getData(accessToken) {
     response = await lazada.getCategoryTree({});
     const categories = response.data;
     response = await lazada.getProducts({
-        access_token: accessToken,
         filter: 'all',
         limit: 20
     });
@@ -49,13 +47,13 @@ routes.get('/callback', (req, res) => {
 });
 routes.post('/lazada', async (req, res) => {
     const response = { error: true };
-    console.log(req.body.code)
     try {
-        const accessToken = await getAccessToken(req.body.code);
-        console.log(accessToken);
-        const data = await getData(accessToken);
+        const { code } = req.body;
+        const accessToken = await getAccessToken(code);
+        const data = await getData();
         res.send({accessToken, data});
     } catch(err) {
+        console.log(err);
         res.send({...response, ...err})
     }
 });
