@@ -1,4 +1,9 @@
+const path = require('path');
+const fs = require('fs');
+
 const express = require('express');
+const http = require('http');
+const https = require('https');
 const cors = require('cors');
 
 require('dotenv').config();
@@ -24,8 +29,20 @@ async function main() {
     }
 
     const port = process.env.API_SERVER_PORT || 4000;
-    app.listen(port, () => {
+    const httpsPort = 8443;
+    const key = fs.readFileSync(path.join(__dirname,'../ssl/localhost.key'));
+    const cert = fs.readFileSync(path.join(__dirname,'../ssl/localhost.crt'));
+    const credentials = {
+        key, cert
+    };
+    const httpServer = http.createServer(app);
+    const httpsServer = https.createServer(credentials, app);
+
+    httpServer.listen(port, () => {
         console.log(`Backend server running on http://localhost:${port}`);
+    });
+    httpsServer.listen(httpsPort, () => {
+        console.log(`HTTPS version running on https://localhost:${httpsPort}`);
     });
 }
 

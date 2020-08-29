@@ -1,5 +1,5 @@
 node_modules
-.idea
+.idea/workspace.xml
 .cache
 .temp_cache
 bp.exe
